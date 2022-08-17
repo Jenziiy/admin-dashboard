@@ -1,7 +1,12 @@
+html, body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
 .wrapper {
   display: flex;
   justify-content: center;
-  background-color: rgba(20, 18, 18, 0.818);
+  background-color: rgba(20, 18, 18);
 }
 
 .parent-container {
@@ -17,7 +22,6 @@
 }
 
 .child {
-  border: pink solid;
   background-color: whitesmoke;
 }
 
@@ -43,7 +47,6 @@
   gap: 20px;
   justify-content: space-evenly;
   align-content: space-evenly;
-  background-color: rgba(208, 253, 253, 0.757);
 }
 .sub-item {
   width: 40%;
@@ -59,4 +62,8 @@
 
 .item-6 {
   grid-area: trending;
+}
+
+.item-4, .item-5, .item-6 {
+  background-color: rgba(208, 253, 253, 0.757);
 }
