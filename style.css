@@ -1,12 +1,14 @@
+
 .parent-container {
   display: grid;
-  width: 100vw;
+  width: 75vw;
   height: 100vh;
-  grid-template-areas:  " nav search"
-                        "nav header"
-                        "nav main";
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: 1fr 1fr 4fr;
+  grid-template-areas:  " nav search search"
+                        "nav header header"
+                        "nav main announcements"
+                        "nav main trending";
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 0.5fr 1fr 2.5fr 2.5fr;
 }
 
 .child {
@@ -27,4 +29,27 @@
 
 .item-4 {
   grid-area: main;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  width: 100%;
+  gap: 20px;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  background-color: rgba(96, 128, 173, 0.2);
+}
+.sub-item {
+  width: 40%;
+  height: 20%;
+  background-color: whitesmoke;
+  justify-content: center;
+  align-content: center;
+}
+
+.item-5 {
+ grid-area: announcements;
+}
+
+.item-6 {
+  grid-area: trending;
 }
