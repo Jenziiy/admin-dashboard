@@ -1,3 +1,8 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(20, 18, 18, 0.818);
+}
 
 .parent-container {
   display: grid;
@@ -13,10 +18,12 @@
 
 .child {
   border: pink solid;
+  background-color: whitesmoke;
 }
 
 .item-1 {
   grid-area: nav;
+  background-color: rgb(0, 115, 191);
 }
 
 .item-2 {
@@ -36,7 +43,7 @@
   gap: 20px;
   justify-content: space-evenly;
   align-content: space-evenly;
-  background-color: rgba(96, 128, 173, 0.2);
+  background-color: rgba(208, 253, 253, 0.757);
 }
 .sub-item {
   width: 40%;
