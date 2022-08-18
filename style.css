@@ -32,6 +32,15 @@ html, body {
 
 .item-2 {
   grid-area: search;
+display: flex;
+padding: 1.5em;
+padding-left: 50px;
+}
+
+.search {
+  border-radius: 20px;
+  border-style: none;
+  width: 55em;
 }
 
 .item-3 {
@@ -42,7 +51,7 @@ html, body {
   grid-area: main;
   display: flex;
   flex-wrap: wrap;
-  flex-grow: 1;
+  flex: 1 1 auto;
   width: 100%;
   gap: 20px;
   justify-content: space-evenly;
@@ -61,6 +70,9 @@ html, body {
   font-family: Tahoma, Geneva, Verdana, sans-serif;
   
 }
+p, h3 {
+font-size: min(15px, 50%);
+}
 
 .item-5 {
  grid-area: announcements;
@@ -70,6 +82,22 @@ html, body {
   grid-area: trending;
 }
 
-.item-4, .item-5, .item-6 {
+.item-4, .item-5, .item-6, .search {
   background-color: rgb(225, 242, 249);
+}
+
+#magnify {
+  width: 1.5em;
+  height: auto;
+  margin-right: 1em;
+}
+input {
+  padding-left: 20px;
+  color: rgb(13, 12, 12);
+  font-weight: 500;
+  font-size: 15px;
+}
+
+input:focus {
+  outline: none;
 }
