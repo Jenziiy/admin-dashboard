@@ -152,7 +152,7 @@ p {
   align-content: center;
 }
 
-.item-4, .item-5, .item-6, .search {
+.item-4, .item-5, .item-6, .search, :root {
   background-color: rgb(225, 242, 249);
 }
 
@@ -211,6 +211,7 @@ button {
   width: min(92%, 300px);
   border-radius: 5px;
   margin-bottom: max(4.3vh, 0.1vw);
+  margin-right: 5%;
 }
 
 .trending > * {
