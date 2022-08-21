@@ -14,6 +14,7 @@ html, body {
 }
 
 .parent-container {
+  max-height: 100vh;
   flex: 0 1 100%;
   display: grid;
   grid-template-areas:  " nav search search"
@@ -124,10 +125,10 @@ span {
 .sub-item > p, .sub-item > h3 {
 margin: 0%;
 grid-column: 1 span 2;
-flex: 0 1 0;
+flex: 1 1 auto;
 }
 .sub-item > h3 {
-  font-size: max(1vw, 1vh);
+  font-size: max(13px,max(1.05vw, 1.05vh));
 }
 h2, h3 {
   font-size: max(1.2vw, 1.2vh);
@@ -136,7 +137,7 @@ h3 {
   padding-bottom: 5%;
 }
 p {
-  font-size: max(1vw, 1vh);
+  font-size: max(12px, max(1vw,1vh));
 }
 .superchild {
   grid-area: sidebar;
@@ -212,6 +213,7 @@ button {
   background-color: white;
   grid-template-rows: repeat(4,1fr);
   width: min(30vw, 30vh);
+  min-width: fit-content;
   border-radius: 5px;
   margin-right: 5%;
 }
@@ -302,4 +304,14 @@ hr {
   justify-content: flex-start;
   margin-right: 20px;
 }
+}
+
+@media only screen and (max-width: 528px) {
+  .sub-item {
+    display: grid;
+    width: min(60vw, 60vh);
+    height: min(40vw, 40vh);
+    max-width: 150px;
+    max-height: 100px;
+  }
 }
